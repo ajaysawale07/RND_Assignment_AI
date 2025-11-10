@@ -52,3 +52,8 @@ You can also visualize this equation interactively here:
 👉 [Desmos Graphing Calculator](https://www.desmos.com/calculator/rfj91yrxob)
 
 ---
+
+We solved the parameter estimation problem using nonlinear optimization with the L-BFGS-B algorithm from scipy.optimize.
+The cost function minimized the total L1 distance between actual and predicted curve points.
+By constraining θ, M, and X to the given ranges, the model converged to an optimal solution that closely fits the given data.
+The results were validated visually using Matplotlib and numerically via the computed L1 error metric
